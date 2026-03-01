@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Duc Nguyen — Graphic Designer",
-  description:
-    "Personal portfolio of Duc Nguyen, a graphic designer based in Vietnam.",
+  title: siteConfig.title,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({

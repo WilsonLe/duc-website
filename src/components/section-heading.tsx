@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-
 type SectionHeadingProps = {
   label: string;
   title: string;
@@ -8,7 +6,7 @@ type SectionHeadingProps = {
 
 export function SectionHeading({ label, title, className }: SectionHeadingProps) {
   return (
-    <div className={cn(className)}>
+    <div className={className}>
       <p className="text-xs tracking-widest uppercase text-neutral-400 mb-4">
         {label}
       </p>
