@@ -5,7 +5,5 @@ export { cvContent } from "./cv";
 export type {
   CvContent,
   CvContact,
-  CvEducationEntry,
-  CvExhibitionEntry,
-  CvDesignWorkEntry,
+  CvEntry,
 } from "./cv";

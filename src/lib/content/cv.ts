@@ -7,26 +7,16 @@ export type CvContact = {
   instagram: string;
 };
 
-export type CvEducationEntry = {
-  year: number;
-  description: string;
-};
-
-export type CvExhibitionEntry = {
-  year: number;
-  description: string;
-};
-
-export type CvDesignWorkEntry = {
+export type CvEntry = {
   year: string;
   description: string;
 };
 
 export type CvContent = {
   contact: CvContact;
-  education: readonly CvEducationEntry[];
-  exhibitions: readonly CvExhibitionEntry[];
-  designWorks: readonly CvDesignWorkEntry[];
+  education: readonly CvEntry[];
+  exhibitions: readonly CvEntry[];
+  designWorks: readonly CvEntry[];
 };
 
 export const cvContent: CvContent = {
@@ -40,44 +30,44 @@ export const cvContent: CvContent = {
   },
   education: [
     {
-      year: 2024,
+      year: "2024",
       description:
         "BA in Studio Art, Denison University, Granville, Ohio (expected graduation: May 2024)",
     },
   ],
   exhibitions: [
     {
-      year: 2024,
+      year: "2024",
       description:
         "Group Exhibition, I will never properly comprehend the line Exhibition, Denison Museum, Denison University, Granville, Ohio",
     },
     {
-      year: 2024,
+      year: "2024",
       description:
         "Group Exhibition, Face Exhibition, Mulberry Gallery, Denison University, Granville, Ohio",
     },
     {
-      year: 2023,
+      year: "2023",
       description:
         "Group Exhibition, Fall Final Exhibition, Bryant Art Gallery, Denison University, Granville, Ohio",
     },
     {
-      year: 2023,
+      year: "2023",
       description:
         "Group Exhibition, Midterm Exhibition, Bryant Art Gallery, Denison University, Granville, Ohio",
     },
     {
-      year: 2023,
+      year: "2023",
       description:
         "Group Exhibition, Collage Stories, Bryant Art Gallery, Denison University, Granville, Ohio",
     },
     {
-      year: 2023,
+      year: "2023",
       description:
         "Group Exhibition, The Bed Exhibition, Bryant Art Gallery, Denison University, Granville, Ohio",
     },
     {
-      year: 2022,
+      year: "2022",
       description:
         "Group Exhibition, Midterm Exhibition, Bryant Art Gallery, Denison University, Granville, Ohio",
     },
