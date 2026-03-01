@@ -1,28 +1,27 @@
+import { aboutContent } from "@/lib/content";
+import { cvContent } from "@/lib/content";
+
 export const siteConfig = {
   name: "Duc Nguyen",
-  title: "Duc Nguyen — Graphic Designer",
+  title: "Duc Nguyen — Graphic Designer, Printmaker & Riso Print Artist",
   description:
-    "Personal portfolio of Duc Nguyen, a graphic designer based in Vietnam.",
-  tagline: "Graphic Designer · Vietnam",
+    "Personal portfolio of Duc Nguyen, a graphic designer, printmaker, and Riso print artist.",
+  tagline: "Graphic Designer · Printmaker · Riso Print Artist",
   heroDescription:
     "Crafting visual identities and compelling design experiences that tell meaningful stories.",
-  aboutHeading: "Design is how it works.",
-  aboutParagraphs: [
-    "I'm Duc Nguyen, a graphic designer based in Vietnam with a passion for brand identity, typography, and print design. I believe that great design is invisible — it guides, informs, and delights without getting in the way.",
-    "With an eye for detail and a love for clean aesthetics, I help brands find their visual voice and connect with their audience in an authentic way.",
-  ],
+  aboutHeading: aboutContent.heading,
+  aboutParagraphs: aboutContent.paragraphs,
   contactHeading: "Let's work together.",
   contactDescription:
     "Have a project in mind? I'd love to hear about it. Send me a message and let's create something great.",
-  email: "duc@example.com",
+  email: cvContent.contact.email,
   socialLinks: [
-    { label: "LinkedIn", href: "#" },
-    { label: "Behance", href: "#" },
-    { label: "Instagram", href: "#" },
+    { label: "Instagram", href: `https://instagram.com/${cvContent.contact.instagram}` },
   ],
   navLinks: [
     { label: "About", href: "/about" },
     { label: "Work", href: "/work" },
+    { label: "CV", href: "/cv" },
     { label: "Contact", href: "/contact" },
   ],
 } as const;
