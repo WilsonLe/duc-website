@@ -21,9 +21,9 @@ export const siteConfig = {
     { label: "Instagram", href: "#" },
   ],
   navLinks: [
-    { label: "About", href: "#about" },
-    { label: "Work", href: "#work" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/about" },
+    { label: "Work", href: "/work" },
+    { label: "Contact", href: "/contact" },
   ],
 } as const;
 

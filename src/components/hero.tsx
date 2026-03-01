@@ -17,7 +17,7 @@ export function Hero() {
         </p>
         <div className="mt-12">
           <a
-            href="#work"
+            href="/work"
             className="inline-block bg-neutral-900 text-white text-sm px-8 py-4 rounded-full hover:bg-neutral-700 transition-colors"
           >
             View My Work

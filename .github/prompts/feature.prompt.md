@@ -9,7 +9,9 @@ Implement the requested feature in this Next.js static portfolio website.
 
 ## Guidelines
 
-- Follow the existing project structure (App Router, Tailwind CSS, TypeScript).
+- Follow the existing project structure (App Router under `src/app/`, Tailwind CSS, TypeScript).
+- Reuse existing components from `src/components/` and utilities from `src/lib/` wherever possible.
+- Follow DRY principles: if anything is reusable, make it a component in `src/components/`.
 - Keep the static export constraint in mind (`output: "export"` — no server-side APIs).
 - Reuse existing components and utilities wherever possible.
 - Write clean, readable TypeScript with proper types (avoid `any`).
