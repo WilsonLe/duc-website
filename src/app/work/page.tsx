@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Navbar, SectionHeading, ProjectCard, Footer } from "@/components";
-import { siteConfig, projects } from "@/lib/site-config";
+import { Navbar, SectionHeading, Footer } from "@/components";
+import { WorkGrid } from "@/components/work-grid";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: `Work — ${siteConfig.name}`,
@@ -9,17 +10,13 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <main className="min-h-screen bg-white text-neutral-900 font-sans">
+    <main className="min-h-screen text-neutral-900 font-sans">
       <Navbar />
 
       <section className="py-32 px-8 pt-40">
-        <div className="max-w-4xl mx-auto">
-          <SectionHeading label="Selected Work" title="Projects" className="mb-16" />
-          <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
-          </div>
+        <div className="max-w-5xl mx-auto">
+          <SectionHeading label="Selected Work" title="Projects" className="mb-12" />
+          <WorkGrid />
         </div>
       </section>
 

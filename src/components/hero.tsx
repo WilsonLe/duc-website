@@ -1,28 +1,38 @@
+import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 export function Hero() {
   return (
-    <section className="flex flex-col justify-center min-h-screen px-8 pt-20">
-      <div className="max-w-4xl">
-        <p className="text-sm tracking-widest uppercase text-neutral-400 mb-6">
-          {siteConfig.tagline}
-        </p>
-        <h1 className="text-6xl md:text-8xl font-bold leading-none tracking-tight mb-8">
-          Duc
-          <br />
-          Nguyen
-        </h1>
-        <p className="text-xl md:text-2xl text-neutral-500 max-w-xl leading-relaxed">
-          {siteConfig.heroDescription}
-        </p>
-        <div className="mt-12">
-          <a
-            href="/work"
-            className="inline-block bg-neutral-900 text-white text-sm px-8 py-4 rounded-full hover:bg-neutral-700 transition-colors"
-          >
-            View My Work
-          </a>
-        </div>
+    <section className="relative flex flex-col items-center justify-center min-h-screen px-8 pt-20 text-center overflow-hidden">
+      {/* Large poster-style title */}
+      <h1
+        className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-black leading-[0.85] tracking-tight uppercase"
+        style={{ color: "var(--color-red)" }}
+      >
+        Duc
+        <br />
+        Nguyen
+      </h1>
+
+      <p className="mt-6 text-sm md:text-base tracking-[0.3em] uppercase text-neutral-500">
+        {siteConfig.tagline}
+      </p>
+
+      <p className="mt-6 text-lg md:text-xl text-neutral-500 max-w-md leading-relaxed">
+        {siteConfig.heroDescription}
+      </p>
+
+      <div className="mt-10">
+        <Link
+          href="/work"
+          className="inline-block text-sm px-8 py-4 rounded-full transition-colors"
+          style={{
+            backgroundColor: "var(--color-red)",
+            color: "#fff",
+          }}
+        >
+          View My Work
+        </Link>
       </div>
     </section>
   );

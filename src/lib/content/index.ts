@@ -7,3 +7,11 @@ export type {
   CvContact,
   CvEntry,
 } from "./cv";
+
+export {
+  categories,
+  projects,
+  getProjectBySlug,
+  getProjectsByCategory,
+} from "./projects";
+export type { Category, Project } from "./projects";

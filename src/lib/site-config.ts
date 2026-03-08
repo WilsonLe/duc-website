@@ -19,22 +19,9 @@ export const siteConfig = {
     { label: "Instagram", href: `https://instagram.com/${cvContent.contact.instagram}` },
   ],
   navLinks: [
-    { label: "About", href: "/about" },
+    { label: "Home", href: "/" },
     { label: "Work", href: "/work" },
+    { label: "About", href: "/about" },
     { label: "CV", href: "/cv" },
-    { label: "Contact", href: "/contact" },
   ],
 } as const;
-
-export type Project = {
-  title: string;
-  category: string;
-  color: string;
-};
-
-export const projects: Project[] = [
-  { title: "Brand Identity", category: "Branding", color: "bg-amber-100" },
-  { title: "Editorial Design", category: "Print", color: "bg-sky-100" },
-  { title: "Packaging", category: "Product Design", color: "bg-emerald-100" },
-  { title: "Visual Campaign", category: "Art Direction", color: "bg-rose-100" },
-];

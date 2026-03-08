@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function CvPage() {
   return (
-    <main className="min-h-screen bg-white text-neutral-900 font-sans">
+    <main className="min-h-screen text-neutral-900 font-sans">
       <Navbar />
 
       <section className="py-32 px-8 pt-40">
@@ -22,7 +22,6 @@ export default function CvPage() {
             <h3 className="text-sm tracking-widest uppercase text-neutral-400 mb-4">Contact</h3>
             <ul className="text-neutral-600 leading-relaxed space-y-1">
               <li>Email: {cvContent.contact.email}</li>
-              <li>Phone: {cvContent.contact.phone}</li>
               <li>Address: {cvContent.contact.address}</li>
               <li>
                 Website:{" "}

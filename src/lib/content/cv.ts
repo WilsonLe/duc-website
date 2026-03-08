@@ -2,7 +2,6 @@ export type CvContact = {
   name: string;
   email: string;
   address: string;
-  phone: string;
   website: string;
   instagram: string;
 };
@@ -23,8 +22,7 @@ export const cvContent: CvContent = {
   contact: {
     name: "Duc Nguyen",
     email: "nguyenmanhducpsd@gmail.com",
-    address: "8442 Slayter Union, Granville, Ohio, United States 43023",
-    phone: "740-405-7628",
+    address: "S2.17 Building Oceanpark, Gia Lam, Hanoi, 100000",
     website: "https://ducnguyen.work/",
     instagram: "follyblueduck",
   },

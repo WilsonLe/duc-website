@@ -1,5 +1,5 @@
-import type { Project } from "@/lib/site-config";
-import { cn } from "@/lib/utils";
+import Link from "next/link";
+import type { Project } from "@/lib/content/projects";
 
 type ProjectCardProps = {
   project: Project;
@@ -7,14 +7,23 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div
-      className={cn(
-        project.color,
-        "rounded-2xl aspect-video flex flex-col justify-end p-6 cursor-pointer hover:scale-[1.02] transition-transform"
-      )}
-    >
-      <p className="text-xs text-neutral-500 mb-1">{project.category}</p>
-      <h3 className="text-xl font-semibold">{project.title}</h3>
-    </div>
+    <Link href={`/work/${project.slug}`} className="group block">
+      <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-neutral-100">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={project.thumbnail}
+          alt={project.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+      <div className="mt-3">
+        <p className="text-xs tracking-widest uppercase text-neutral-400">
+          {project.category}
+        </p>
+        <h3 className="text-lg font-semibold mt-0.5 group-hover:text-[var(--color-red)] transition-colors">
+          {project.title}
+        </h3>
+      </div>
+    </Link>
   );
 }

@@ -1,20 +1,21 @@
+import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-8 py-5 bg-white/80 backdrop-blur-md border-b border-neutral-100">
-      <span className="text-sm font-semibold tracking-widest uppercase">
+    <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-8 py-5 bg-[var(--color-cream)]/80 backdrop-blur-md border-b border-neutral-200">
+      <Link href="/" className="text-sm font-semibold tracking-widest uppercase">
         {siteConfig.name}
-      </span>
+      </Link>
       <ul className="flex gap-8 text-sm text-neutral-500">
         {siteConfig.navLinks.map((link) => (
           <li key={link.label}>
-            <a
+            <Link
               href={link.href}
-              className="hover:text-neutral-900 transition-colors"
+              className="hover:text-[var(--color-red)] transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

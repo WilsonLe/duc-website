@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --color-cream: #FAF9F6;
+  --color-red: #C1272D;
+  --color-red-dark: #9E1F24;
+}
+
 body {
-  background: #ffffff;
+  background: var(--color-cream);
   color: #171717;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
